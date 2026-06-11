@@ -1,98 +1,120 @@
-/* Configurações Gerais de Reset */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset Geral */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f9f4; /* Fundo verde bem clarinho */
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f4;
+    color: #2c3e50;
     line-height: 1.6;
 }
 
-/* Cabeçalho principal */
+/* Header com degradê sustentável */
 header {
-    background-color: #2e7d32; /* Verde folha forte */
-    color: white;
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+    color: #ffffff;
+    padding: 4rem 1rem;
     text-align: center;
-    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-    margin: 0;
+.header-container h1 {
     font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
 }
 
-header p {
-    margin: 0.5rem 0 0 0;
-    font-size: 1.2rem;
-    opacity: 0.9;
+.header-container h2 {
+    font-size: 1.5rem;
+    color: #a5d6a7;
+    font-weight: 400;
+    margin-bottom: 1rem;
 }
 
-/* Menu de Navegação */
-nav {
-    background-color: #1b5e20; /* Verde escuro */
-    text-align: center;
-    padding: 0.7rem;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+.header-container p {
     font-size: 1rem;
-    transition: color 0.3s ease;
+    text-transform: uppercase;
+    opacity: 0.8;
 }
 
-nav a:hover {
-    color: #a5d6a7; /* Verde claro ao passar o mouse */
-}
-
-/* Container do Conteúdo */
-.container {
-    max-width: 800px;
-    margin: 2rem auto;
+/* Layout do Conteúdo */
+.main-container {
+    max-width: 900px;
+    margin: 2.5rem auto;
     padding: 0 1rem;
 }
 
-/* Estilização das Seções */
-section {
-    background: white;
+.card {
+    background: #ffffff;
     padding: 2rem;
-    margin-bottom: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+    border-top: 5px solid #2e7d32;
 }
 
-h2 {
+.card h3 {
+    color: #1b5e20;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Botões Interativos (Abas) */
+.tabs-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.btn-tech {
+    background-color: #e8f5e9;
     color: #2e7d32;
-    margin-top: 0;
-    border-bottom: 2px solid #a5d6a7;
-    padding-bottom: 0.5rem;
+    border: 2px solid #2e7d32;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* Lista de Temas */
-ul {
-    list-style-type: none;
-    padding: 0;
+.btn-tech:hover, .btn-tech.active {
+    background-color: #2e7d32;
+    color: #ffffff;
 }
 
-ul li {
-    background: #e8f5e9; /* Fundo verde suave para itens */
-    margin: 0.6rem 0;
-    padding: 0.8rem;
-    border-left: 5px solid #2e7d32;
-    border-radius: 4px;
+/* Painéis de Conteúdo do JS */
+.tab-panel {
+    display: none;
+    background-color: #f9fbf9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #8bc34a;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.tab-panel h4 {
+    color: #2e7d32;
+    margin-bottom: 0.5rem;
 }
 
 /* Rodapé */
 footer {
+    background-color: #1b5e20;
+    color: #ffffff;
     text-align: center;
     padding: 1.5rem;
-    background-color: #2e7d32;
-    color: white;
     margin-top: 4rem;
     font-size: 0.9rem;
 }
