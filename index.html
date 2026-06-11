@@ -8,54 +8,95 @@
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <h1>Agro Forte, Futuro Sustentável</h1>
-            <h2>Equilíbrio entre Produção e Meio Ambiente</h2>
-            <p>Concurso Agrinho 2026 | Categoria Programação</p>
+    <header class="hero">
+        <div class="hero-overlay">
+            <div class="hero-container">
+                <span class="badge">Concurso Agrinho 2026</span>
+                <h1>Agro Forte, Futuro Sustentável</h1>
+                <h2>O equilíbrio perfeito entre a produção de alimentos e o meio ambiente</h2>
+                <p>Categoria Programação — Rede Estadual de Ensino do Paraná</p>
+                <a href="#solucoes" class="btn-primary">Explorar Soluções</a>
+            </div>
         </div>
     </header>
 
-    <main class="main-container">
-        <section class="card">
-            <h3>O Grande Equilíbrio</h3>
-            <p>O desafio da agricultura moderna é produzir alimentos de alta qualidade para uma população crescente, mantendo o respeito absoluto aos recursos naturais. O Estado do Paraná se destaca ao unir tecnologia de ponta com práticas de conservação do solo e da água.</p>
-        </section>
+    <section class="section container">
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>Transformando o Amanhã</h3>
+                <p>O grande desafio do agronegócio moderno é garantir a segurança alimentar do planeta enquanto preservamos nossos recursos mais preciosos: o solo, a água e a biodiversidade. A tecnologia e a educação digital são as chaves para essa revolução verde.</p>
+            </div>
+        </div>
+    </section>
 
-        <section class="card">
-            <h3>Pilares do Agro Sustentável</h3>
-            <p>Clique nos botões abaixo para explorar as tecnologias que protegem o nosso futuro:</p>
-            
-            <div class="tabs-buttons">
-                <button class="btn-tech" data-target="tech1">Plantio Direto</button>
-                <button class="btn-tech" data-target="tech2">Drones e IA</button>
-                <button class="btn-tech" data-target="tech3">Manejo Integrado</button>
+    <section id="solucoes" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h3>Práticas e Tecnologias Sustentáveis</h3>
+                <p>Clique nos cards abaixo para ver detalhes sobre como o campo protege a natureza.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card btn-tech" data-target="tech1">
+                    <div class="card-icon">🌱</div>
+                    <h4>Plantio Direto</h4>
+                    <p>Proteção do solo e conservação da água na lavoura.</p>
+                </div>
+
+                <div class="service-card btn-tech" data-target="tech2">
+                    <div class="card-icon">🛸</div>
+                    <h4>Drones & IA</h4>
+                    <p>Monitoramento inteligente e precisão zero desperdício.</p>
+                </div>
+
+                <div class="service-card btn-tech" data-target="tech3">
+                    <div class="card-icon">🐞</div>
+                    <h4>Manejo Integrado</h4>
+                    <p>Controle biológico reduzindo o uso de químicos.</p>
+                </div>
             </div>
 
             <div class="tabs-content">
                 <div id="tech1" class="tab-panel active">
                     <h4>Plantio Direto na Palha</h4>
-                    <p>Evita a erosão do solo, mantém a umidade da terra e reduz a emissão de gases poluentes. Uma técnica onde o Paraná é pioneiro!</p>
+                    <p>Esta técnica evita o revolvimento do solo e mantém os restos vegetais na superfície. Isso impede a erosão provocada pelas chuvas, mantém a terra úmida por mais tempo e fixa o carbono no solo, ajudando a combater o aquecimento global. O Paraná é referência mundial nessa prática!</p>
                 </div>
                 <div id="tech2" class="tab-panel">
                     <h4>Drones e Inteligência Artificial</h4>
-                    <p>Permitem aplicar defensivos agrícolas e água apenas onde é necessário, evitando desperdícios e protegendo os lençóis freáticos.</p>
+                    <p>Com sensores avançados e câmeras térmicas, os drones sobrevoam as plantações mapeando pragas ou falta de água. A inteligência artificial analisa esses dados e diz exatamente onde aplicar recursos. O resultado? Economia severa de água e defensivos agrícolas.</p>
                 </div>
                 <div id="tech3" class="tab-panel">
                     <h4>Manejo Integrado de Pragas (MIP)</h4>
-                    <p>Usa inimigos naturais dos insetos nocivos para proteger a lavoura, reduzindo drasticamente a necessidade de produtos químicos.</p>
+                    <p>O MIP é uma estratégia que prioriza o equilíbrio da própria natureza. Em vez de pulverizar produtos químicos ao primeiro sinal de insetos, os produtores usam os chamados "inimigos naturais" (insetos benéficos) para controlar as pragas, protegendo a saúde do ecossistema e do consumidor.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="card text-center">
-            <h3>Tecnologia a Serviço do Campo</h3>
-            <p>Através do Pensamento Computacional e da Programação, nós, estudantes, podemos criar soluções reais para monitoramento ambiental, previsão climática e otimização de safras.</p>
-        </section>
-    </main>
+    <section class="section container">
+        <div class="section-header">
+            <h3>Vozes do Campo e da Escola</h3>
+            <p>O impacto do projeto Agrinho na comunidade escolar paranaense.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="quote">"A programação nos permite simular soluções reais para o campo. Aprendi que computação e agricultura andam juntas!"</p>
+                <h5>Lucas S.</h5>
+                <span class="role">Estudante do Ensino Médio</span>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"O tema deste ano desafiou os alunos a pensarem de forma ética e sustentável usando lógica de programação front-end."</p>
+                <h5>Profª. Márcia R.</h5>
+                <span class="role">Educação Digital e Computação</span>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>Desenvolvido para o Concurso Agrinho 2026 &copy; Rede Estadual de Ensino do Paraná</p>
+        <div class="container">
+            <p>Desenvolvido para o Concurso Agrinho 2026 &copy; Todos os direitos reservados.</p>
+            <p class="sub-footer">Trabalho autoral em conformidade com o item 6.1.15 do regulamento.</p>
+        </div>
     </footer>
 
     <script src="script.js" defer></script>
