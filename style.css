@@ -1,0 +1,98 @@
+/* Configurações Gerais de Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9f4; /* Fundo verde bem clarinho */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho principal */
+header {
+    background-color: #2e7d32; /* Verde folha forte */
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #1b5e20; /* Verde escuro */
+    text-align: center;
+    padding: 0.7rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #a5d6a7; /* Verde claro ao passar o mouse */
+}
+
+/* Container do Conteúdo */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Estilização das Seções */
+section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #2e7d32;
+    margin-top: 0;
+    border-bottom: 2px solid #a5d6a7;
+    padding-bottom: 0.5rem;
+}
+
+/* Lista de Temas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e8f5e9; /* Fundo verde suave para itens */
+    margin: 0.6rem 0;
+    padding: 0.8rem;
+    border-left: 5px solid #2e7d32;
+    border-radius: 4px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2e7d32;
+    color: white;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
